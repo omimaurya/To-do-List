@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    overflow-x: hidden;
+    background-color: rgb(224, 221, 226);
+}
+.todolist{
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.input_section{
+    margin-bottom: 2rem;
+}
+.input_section h1{
+font-size: 5rem;
+text-align: center;
+margin-bottom: 2rem;
+}
+.inputTodo{
+    border: 3px solid black;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+.inputTodo input{
+    padding: 1rem 2rem;
+    font-size: 2.6rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+  background-color: transparent;
+}
+
+.btn,.deleteBtn{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    background-color: blanchedalmond;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover{
+    background-color: rgb(152, 86, 214);
+    color: aliceblue;
+}
+.main_todo_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+   
+}
+.main_todo_div li{
+    font-size: 2.2rem;
+    list-style: none;
+}
+.icon{
+   font-size: 3rem; 
+}
+.deleteBtn{
+    border-radius: 1rem;
+    margin-right: 0;
+    transition: all 0.2s ease-in-out;
+}
+.deleteBtn:hover{
+background-color: brown;
+color: aliceblue;
+
+}
+
+@media screen and (max-width:600px){
+    html{
+        font-size: 50%;
+    }
+}
+@media screen and (max-width:400px){
+    html{
+        font-size: 40%;
+    }
+    .inputTodo{
+        display: flex;
+    }
+    .inputTodo input{
+        flex-shrink: 1;
+    }
+}
